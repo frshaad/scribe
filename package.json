@@ -1,7 +1,7 @@
 {
-  "name": "next-starter",
+  "name": "scribe",
   "version": "1.0.0",
-  "description": "A professional Next.js starter template with TypeScript, Tailwind CSS, and more",
+  "description": "A real-time collaborative document editor with cloud sync, markdown support, and a minimalist UI.",
   "private": true,
   "author": {
     "name": "Farshad Hatami",
@@ -11,12 +11,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frshaad/next-starter.git"
+    "url": "git+https://github.com/frshaad/scribe.git"
   },
   "bugs": {
-    "url": "https://github.com/frshaad/next-starter/issues"
+    "url": "https://github.com/frshaad/scribe/issues"
   },
-  "homepage": "https://github.com/frshaad/next-starter#readme",
+  "homepage": "https://github.com/frshaad/scribe#readme",
   "engines": {
     "node": ">=20.11"
   },
