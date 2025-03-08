@@ -40,6 +40,7 @@ export default tseslint.config([
       '@typescript-eslint/no-non-null-assertion': 'error',
       '@typescript-eslint/prefer-as-const': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': 'off',
 
       'react/button-has-type': 'warn',
       'react/jsx-no-constructed-context-values': 'warn',
