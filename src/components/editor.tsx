@@ -1,5 +1,6 @@
 'use client';
 
+import Image from '@tiptap/extension-image';
 import Table from '@tiptap/extension-table';
 import TableCell from '@tiptap/extension-table-cell';
 import TableHeader from '@tiptap/extension-table-header';
@@ -8,6 +9,7 @@ import TaskItem from '@tiptap/extension-task-item';
 import TaskList from '@tiptap/extension-task-list';
 import { EditorContent, useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
+import ImageResize from 'tiptap-extension-resize-image';
 
 export default function Editor() {
   const editor = useEditor({
@@ -30,28 +32,15 @@ export default function Editor() {
       TableRow,
       TableHeader,
       TableCell,
+      Image,
+      ImageResize,
     ],
     content: `
-    <table>
-      <tbody>
-        <tr>
-          <th>Name</th>
-          <th colspan="3">Description</th>
-        </tr>
-        <tr>
-          <td>Cyndi Lauper</td>
-          <td>Singer</td>
-          <td>Songwriter</td>
-          <td>Actress</td>
-        </tr>
-      </tbody>
-    </table>
+    <p>This is a basic example of implementing images. Drag to re-order.</p>
+    <img src="https://placehold.co/800x400" />
+    <img src="https://placehold.co/800x400/6A00F5/white" />
   `,
   });
-
-  if (!editor) {
-    return null;
-  }
 
   return (
     <section className="size-full overflow-x-auto bg-[#f9fbfd] px-4 print:overflow-visible print:bg-white print:px-0">
