@@ -13,6 +13,7 @@ import ImageResize from 'tiptap-extension-resize-image';
 
 export default function Editor() {
   const editor = useEditor({
+    immediatelyRender: false,
     editorProps: {
       attributes: {
         style: 'padding-left: 56px; padding-right: 56px;',

@@ -1,4 +1,5 @@
 import Editor from '@/components/editor';
+import Toolbar from '@/components/toolbar';
 
 type DocumentProps = {
   params: Promise<{ documentId: string }>;
@@ -10,6 +11,7 @@ export default async function Document({ params }: DocumentProps) {
 
   return (
     <div className="min-h-screen bg-[#fafbfd]">
+      <Toolbar />
       <Editor />
     </div>
   );
