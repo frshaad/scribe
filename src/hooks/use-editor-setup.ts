@@ -5,6 +5,7 @@ import TableHeader from '@tiptap/extension-table-header';
 import TableRow from '@tiptap/extension-table-row';
 import TaskItem from '@tiptap/extension-task-item';
 import TaskList from '@tiptap/extension-task-list';
+import Underline from '@tiptap/extension-underline';
 import { useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import ImageResize from 'tiptap-extension-resize-image';
@@ -33,6 +34,7 @@ export function useEditorSetup() {
       TableCell,
       Image,
       ImageResize,
+      Underline,
     ],
     content: `
       <p>This is a basic example of implementing images. Drag to re-order.</p>
