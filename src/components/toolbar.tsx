@@ -10,9 +10,9 @@ export default function Toolbar() {
 
   return (
     <section className="flex min-h-10 items-center gap-x-0.5 overflow-x-auto rounded-3xl bg-[#f1f4f9] px-2.5 py-0.5">
-      {toolbarSections[0].map(renderToolbarButton)}
-      <Separator orientation="vertical" className="h-[1.5rem] bg-neutral-300" />
-      {toolbarSections[1].map(renderToolbarButton)}
+      {toolbarSections[0].map((item) => renderToolbarButton(item))}
+      <Separator orientation="vertical" className="h-6 bg-neutral-300" />
+      {toolbarSections[1].map((item) => renderToolbarButton(item))}
     </section>
   );
 }
