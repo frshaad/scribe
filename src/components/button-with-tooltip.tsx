@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button, type ButtonProps } from '@/components/ui/button';
 import {
   Tooltip,
   TooltipContent,
@@ -6,19 +6,20 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 
-type ButtonWithTooltipProps = React.PropsWithChildren & {
+type ButtonWithTooltipProps = ButtonProps & {
   tooltip: string;
 };
 
 export default function ButtonWithTooltip({
   children,
   tooltip,
+  ...buttonProps
 }: ButtonWithTooltipProps) {
   return (
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="ghost" size="icon" className="cursor-pointer">
+          <Button variant="ghost" size="icon" {...buttonProps}>
             {children}
           </Button>
         </TooltipTrigger>
