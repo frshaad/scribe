@@ -6,3 +6,8 @@ export type ToolbarItem = {
   onClick: () => void;
   isActive?: boolean;
 };
+
+export type ToolbarSection = {
+  id: string;
+  items: ToolbarItem[];
+};
